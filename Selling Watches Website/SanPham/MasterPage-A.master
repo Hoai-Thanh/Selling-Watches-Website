@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage-A.master.cs" Inherits="MasterPage_A" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="Index-Admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container"><!--start container-->
+        <div id="header"><!--start header-->
+            <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="990" height="170">
+                    <param name="movie" value="Header.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="opaque" />
+                    <param name="swfversion" value="8.0.35.0" />
+                    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                    <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="Header.swf" width="990" height="170">
+                      <!--<![endif]-->
+                     <param name="quality" value="high" />
+                     <param name="wmode" value="opaque" />
+                     <param name="swfversion" value="8.0.35.0" />
+                     <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                     <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                     <div>
+                        <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                        <p><a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"  alt="Get Adobe Flash player" 
+                        width="112" height="33" /></a></p>			
+                      </div>
+                      <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                  </object>        
+        </div><!--end header-->
+        <div id="menu"><!--start menu-->
+            <ul>
+                <li><a href="AddNew.aspx">Thêm Mới Sản Phẩm</a></li>
+                <li><a href="Delete.aspx">Xóa Sản Phẩm</a></li>
+                <li><a href="Edit.aspx">Sửa Sản Phẩm</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div><!--end menu-->
+        <div id="Admin"><!--start admin-->
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div><!--end admin-->
+        <div id="footer"><!--start container-->
+            <div id="menu_footer"><!--start menu_footer-->
+                <div id="bao_f">
+                    <div id="logo_footer">  
+                    </div>
+                    <div id="menu_f">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Hướng dẫn</a></li>
+                            <li><a href="#">Bảo hành</a></li>
+                            <li><a href="#">Khuyến mãi</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>  
+                    </div>  
+                </div>
+            </div><!--end menu_footer-->
+            <div id="thongtinsinhvien">
+                <div id="noidung9">
+                    <div id="DC">Địa chỉ: 65 - Huỳnh Thúc Kháng - Quận 1 - TP HCM</div>
+                    <div id="MSSV">MASV: 306111092 - 306111126</div>
+                    <div id="SDT">SĐT: 01679007811 - 01638524426</div>
+                    <div id="EMAIL">Email: pianolossy@yahoo.com.vn</div>
+                </div>   
+            </div>
+        </div>
+    </div><!--end container-->
+    </form>
+</body>
+</html>
